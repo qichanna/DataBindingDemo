@@ -67,4 +67,14 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this,TwoWayActivity.class);
         startActivity(i);
     }
+
+    public void intoLambda(View view){
+        Intent i = new Intent(this,LambdaActivity.class);
+        startActivity(i);
+    }
+
+    public void intoAnimation(View view){
+        Intent i = new Intent(this,AnimationActivity.class);
+        startActivity(i);
+    }
 }

@@ -17,7 +17,7 @@ public class DemoBindingAdapter {
 
     @BindingAdapter({"imageUrl","placeholder"})
     public static void loadImageFromUrl(ImageView view, String url, Drawable drawable){
-        Log.e("liqi7", "loadImageFromUrl: "+url);
+        Log.e("liqi7", "loadImageFromUrl: 11111111"+url);
         Toast.makeText(view.getContext(),"showshowshow",500).show();
 //        Glide.with(view.getContext()).load(url).placeholder(drawable).into(view);
         Glide.with(view.getContext()).load(url)
@@ -27,5 +27,11 @@ public class DemoBindingAdapter {
                 .skipMemoryCache(true)//跳过内存缓存
                 .placeholder(drawable)
                 .into(view);
+    }
+
+    @BindingAdapter({"imageUrl"})
+    public static void loadImageFromUrl(ImageView view, String url){
+        Log.e("liqi7", "loadImageFromUrl11111: "+url);
+        Toast.makeText(view.getContext(),"showshowshow111111",500).show();
     }
 }
