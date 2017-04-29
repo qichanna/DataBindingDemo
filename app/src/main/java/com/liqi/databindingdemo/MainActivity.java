@@ -62,4 +62,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this,ExpressionActivity.class);
         startActivity(i);
     }
+
+    public void intoTwoWay(View view){
+        Intent i = new Intent(this,TwoWayActivity.class);
+        startActivity(i);
+    }
 }

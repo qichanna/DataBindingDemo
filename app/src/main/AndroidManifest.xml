@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ExpressionActivity"></activity>
+        <activity android:name=".ExpressionActivity" />
+        <activity android:name=".TwoWayActivity"></activity>
     </application>
 
 </manifest>
